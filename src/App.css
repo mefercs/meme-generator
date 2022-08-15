@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin:0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.api{ 
+  height:  100vh;
+  background-color: black;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.api>p{
+  color: white; 
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar{
+  position: sticky;
+  max-width: 100%;
+  background-color: purple;
+  color:white;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.form{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 50%;
+  max-width: 400px;
+  margin: 20px auto;
+  row-gap: 20px;
+}
+.form>input{
+  border-radius: 20px;
+  padding: 8px 30px
+}
+.form>button{
+  max-width: 300px;
+  padding:8px 15px;
+  background: purple;
+  color:white;
+  font-weight: bold;
+  border-radius: 10px;
+  border:none;
+}
+.form>button:hover{
+  color: yellow; 
+}
+.form>:active{ 
+  background:rebeccapurple;
+}
+.image{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  width: 70%;
+  background: grey;
+  margin: 0 auto;
+  max-width: 700px;
+}
+.image>img{ 
+width: 100%
+}
+.upper{
+  position: absolute;
+  top: 10px;
+  font-family: 'Rubik Iso', monospace;
+}
+.bottom{
+  position:absolute; 
+  bottom: 10px;
+  font-family: "Rubik Iso", monospace;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
